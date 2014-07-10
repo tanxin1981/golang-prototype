@@ -10,7 +10,7 @@ $ export GOPATH=<path_of_your_choice>
 $ go get github.com/astaxie/beego
 $ go get github.com/astaxie/beego/orm
 $ go get github.com/go-sql-driver/mysql
-$ cd <GOPATH>
+$ cd <GOPATH>/src
 $ git clone git@github.com:zhengyang4k/golang-prototype.git
 $ cd golang-prototype
 $ go run main.go
