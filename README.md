@@ -14,6 +14,15 @@ $ cd <GOPATH>/src
 $ git clone git@github.com:zhengyang4k/golang-prototype.git
 $ cd golang-prototype
 $ go run main.go
+
+db:
+main.go:
+...
+func init() {
+	// register database
+	orm.RegisterDataBase("default", "mysql", "<user>:<pass>@/sgfas?charset=utf8", 30)
+}
+...
 ```
 
 ```
