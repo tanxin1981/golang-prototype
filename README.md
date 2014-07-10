@@ -15,12 +15,12 @@ $ git clone git@github.com:zhengyang4k/golang-prototype.git
 $ cd golang-prototype
 $ go run main.go
 
-db:
+db settings: <username>:<password>@/<dbname>?charset=utf8
 main.go:
 ...
 func init() {
 	// register database
-	orm.RegisterDataBase("default", "mysql", "<user>:<pass>@/sgfas?charset=utf8", 30)
+	orm.RegisterDataBase("default", "mysql", "root@/sgfas?charset=utf8", 30)
 }
 ...
 ```
