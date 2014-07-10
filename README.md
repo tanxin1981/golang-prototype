@@ -1,7 +1,26 @@
-beego-prototype
+golang-prototype
 ===============
 
 Prototype using beego
+
+```
+setup:
+$ sudo apt-get install golang
+$ export GOPATH=<path_of_your_choice>
+$ go get github.com/astaxie/beego
+$ go get github.com/astaxie/beego/orm
+$ go get github.com/go-sql-driver/mysql
+$ git clone git@github.com:zhengyang4k/golang-prototype.git
+$ cd golang-prototype
+$ go run main.go
+```
+
+```
+test urls:
+simple: http://localhost:8080/v1/object
+complex(with db connection): http://localhost:8080/v1/catalog_simple/10002
+```
+
 
 ```
 Benchmark: ab -n 10000 -c 70 <url>
